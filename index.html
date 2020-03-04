@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- jQuery UI CSS file -->
+  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+  <!-- Spectrum CSS file (optional) -->
+  <!-- <link rel="stylesheet" type="text/css" href="/css/spectrum.css"> -->
+
+  <!-- Meme Generator CSS file -->
+  <link rel="stylesheet" type="text/css" href="../dist/jquery.memegenerator.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <header></header>
+    <section class="main">
+      <div class="imgEditorBox">
+        <img class="mainImg" id="meme" src="image/image1.jpg" alt="">
+        <button class="btn" onclick="completeImg()">完成</button>
+      </div>
+      <div class="completedBox"></div>
+      <div class="shareBox">
+        <button class="shareBtn fbBtn">FB</button>
+        <button class="shareBtn lineBtn">LINE</button>
+        <button class="shareBtn copyBtn">COPY</button>
+      </div>
+    </section>
+    <footer></footer>
+  </div>
+
+
+  <!-- jQuery 1.11.3 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- jQuery UI 1.11.4 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+<!-- Spectrum plugin (optional) -->
+<!-- <script src="/js/spectrum.js"></script> -->
+
+<!-- Meme Generator plugin -->
+<script type="text/javascript" src="js/jquery.memegenerator.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
