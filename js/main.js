@@ -4,24 +4,24 @@ $(document).ready(function(){
 
 $(".draggable").draggable();
 
-// function completeImg() {
-//   let canvas = $("#meme").memeGenerator("saveCanvas");
-//   console.log(canvas);
-//   document.querySelector(".completedBox").appendChild(canvas);
-// }
+function completeImg() {
+  let canvas = $("#meme").memeGenerator("saveCanvas");
+  console.log(canvas);
+  document.querySelector(".completedBox").appendChild(canvas);
+}
 
 const box = document.querySelector(".completedBox");
 
-function completeImg() {
-  let canvas = $("#meme").memeGenerator("save");
-  console.log(canvas);
-  const height = document.querySelector(".mainImg").offsetHeight;
-  console.log(height);
-  box.style.backgroundImage=`url(${canvas})`;
-  box.style.height = `${height}px`;
-  box.classList.add("completedImg");
-  document.querySelector(".shareBox").style.visibility="visible";
-}
+// function completeImg() {
+//   let canvas = $("#meme").memeGenerator("save");
+//   console.log(canvas);
+//   const height = document.querySelector(".mainImg").offsetHeight;
+//   console.log(height);
+//   box.style.backgroundImage=`url(${canvas})`;
+//   box.style.height = `${height}px`;
+//   box.classList.add("completedImg");
+//   document.querySelector(".shareBox").style.visibility="visible";
+// }
 
 // $(function(){
 //   var r = $('.mg-wrapper .mg-controls .mg-textbox input[type="range"]');

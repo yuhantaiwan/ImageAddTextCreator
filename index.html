@@ -2,7 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"             content="width=device-width, initial-scale=1.0">
+  <meta property="og:url"           content="https://yuhantaiwan.github.io/ImageAddTextCreator" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Your Website Title" />
+  <meta property="og:description"   content="Your description lalalala" />
+  <!-- <meta property="og:title"         content="智生活" /> -->
+  <!-- <meta property="og:description"   content="智生活關心您" /> -->
+  <meta property="og:image:url"     content="https://yuhantaiwan.github.io/ImageAddTextCreator/image/image1-1.png" />
+
+
   <!-- jQuery UI CSS file -->
   <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
@@ -10,11 +19,14 @@
   <!-- <link rel="stylesheet" type="text/css" href="/css/spectrum.css"> -->
 
   <!-- Meme Generator CSS file -->
-  <link rel="stylesheet" type="text/css" href="../dist/jquery.memegenerator.min.css">
+  <link rel="stylesheet" type="text/css" href="dist/jquery.memegenerator.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>iSharing</title>
 </head>
 <body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v6.0"></script>
+  
   <div class="container">
     <header></header>
     <section class="main">
@@ -23,8 +35,12 @@
         <button class="btn" onclick="completeImg()">完成</button>
       </div>
       <div class="completedBox"></div>
+      <!-- <div class="completedBox2"></div>
+        <img src="" alt="">
+      </div> -->
       <div class="shareBox">
-        <button class="shareBtn fbBtn">FB</button>
+        <!-- <button class="shareBtn fbBtn">FB</button> -->
+        <div class="fb-share-button" data-href="https://yuhantaiwan.github.io/ImageAddTextCreator/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyuhantaiwan.github.io%2FImageAddTextCreator%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">分享</a></div>
         <button class="shareBtn lineBtn">LINE</button>
         <button class="shareBtn copyBtn">COPY</button>
       </div>
